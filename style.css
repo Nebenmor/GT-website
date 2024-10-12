@@ -1,0 +1,76 @@
+/* Colors */
+/* Adding colors to root make them accessible to every other element in the html body */
+:root {
+    --dark-color: #2b2d42;
+    --light-color: #fefefe;
+    --red-color: #d80032;
+    --cyan-color: #41ead4;
+
+    --red-hover-color: #be0732;
+    --cyan-hover-color: #6af3e1;
+}
+
+/* Fonts */
+@font-face {
+    font-family: 'Montserrat';
+    src: url(./fonts/Montserrat/static/Montserrat-ExtraBold.ttf);
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(./fonts/Roboto/Roboto-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(./fonts/Roboto/Roboto-Bold.ttf);
+    font-weight: 700;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+    width: 1152px;
+    margin: 0 auto;
+    padding: 0 100px;
+}
+
+/* Header Navigation */
+.desktop-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--light-color);
+    box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.1);
+    border-radius: 24px;
+    padding: 2px 30px;
+
+    position: fixed;
+    z-index: 200;
+    width: calc(1152px - 200px); /*wrapper width - total of right and left margin (To get the correct width of the navigation menu since it got displaced after setting it's display to fixed)*/
+}
+
+.desktop-nav .menu-items {
+    display: flex;
+    list-style-type: none;
+}
+
+.desktop-nav .menu-items li  {
+    margin: 0 20px;
+}
+
+.desktop-nav .menu-items a {
+    text-decoration: none;
+    color: var(--dark-color);
+    font-size: 16px;
+    font-weight: bold;
+}
