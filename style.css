@@ -241,3 +241,17 @@ a.btn.cyan:hover {
    }
 }
 
+/* Button Animation */
+.hero-container .left .btn:nth-last-of-type(1) {
+    animation: fadeIn 1000ms forwards;
+    opacity: 0;
+    animation-delay: 1400ms;
+}
+
+.hero-container .left .btn:nth-last-of-type(2) {
+    animation: fadeIn 1000ms forwards;
+    opacity: 0;
+    animation-delay: 1600ms;
+}
+
+/* Button Animation */
