@@ -208,3 +208,17 @@ a.btn.cyan:hover {
         transform: translateY(0);
     }
 }
+
+/* Paragraph Animation */
+.hero-container .left p {
+    animation: fadeIn 800ms forwards;
+    opacity: 0;
+    animation-delay: 400ms;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
