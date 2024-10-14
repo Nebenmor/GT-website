@@ -222,3 +222,22 @@ a.btn.cyan:hover {
     }
 }
 
+/* Heading Animation */
+.hero-container .left h1 {
+    animation: fadeToRight 800ms forwards cubic-bezier(0.22, 0.32, 0, 1.54);
+    opacity: 0;
+    animation-delay: 800ms;
+}
+
+@keyframes fadeToRight  {
+   from {
+    opacity: 0;
+    transform: translateX(-100px);
+   }
+   
+   to {
+    opacity: 1;
+    transform: translateX(0);
+   }
+}
+
