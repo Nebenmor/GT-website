@@ -193,7 +193,7 @@ a.btn.cyan:hover {
 /* Animation */
 /* Header Animation */
 .desktop-nav {
-    animation: fadeDown 1000ms forwards;
+    animation: fadeDown 1000ms forwards; /*Note: 'forwards' prevents the animated object from disappearinf after the animation effect is complete*/
     opacity: 0;
 }
 
@@ -254,4 +254,20 @@ a.btn.cyan:hover {
     animation-delay: 1600ms;
 }
 
-/* Button Animation */
+/* Right image Animation */
+.hero-container .right {
+    animation: fadeToLeft 1200ms forwards;
+    opacity: 0;
+    animation-delay: 900ms;
+}
+
+@keyframes fadeToLeft {
+    from {
+        transform: translateX(30px);
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
