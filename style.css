@@ -53,10 +53,12 @@ body {
     box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.1);
     border-radius: 24px;
     padding: 2px 30px;
+    padding-right: 0;
 
     position: fixed;
     z-index: 200;
     width: calc(1152px - 200px); /*wrapper width - total of right and left margin (To get the correct width of the navigation menu since it got displaced after setting it's display to fixed)*/
+    top: 28px;
 }
 
 .desktop-nav .menu-items {
@@ -64,13 +66,126 @@ body {
     list-style-type: none;
 }
 
+/* Note: using the value of "1" for the nth=last-of-child property selects the last element  */
+.desktop-nav .menu-items li:nth-last-of-type(1) {
+    margin-right: 0;
+}
+
 .desktop-nav .menu-items li  {
     margin: 0 20px;
 }
 
-.desktop-nav .menu-items a {
+.desktop-nav .menu-items li a {
     text-decoration: none;
     color: var(--dark-color);
     font-size: 16px;
     font-weight: bold;
+    position: relative;
 }
+ .desktop-nav .menu-items li a.active::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: var(--red-color);
+    left: 0;
+    bottom: -14px;
+ }
+
+.desktop-nav .menu-items li a.btn {
+    color: var(--light-color);
+}
+
+a.btn {
+    background: var(--red-color);
+    color: var(--light-color);
+    border-radius: 24px;
+    padding: 14px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 400ms;
+}
+
+a.btn.cyan {
+    background: var(--cyan-color);
+    color: var(--dark-color);
+}
+
+a.btn:hover {
+    background: var(--red-hover-color)
+}
+
+a.btn.cyan:hover {
+    background: var(--cyan-hover-color);
+}
+
+/* Hero Section */
+.hero-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-container .left {
+    flex: 1;
+}
+
+.hero-container .left p {
+    font-size: 24px;
+}
+
+.hero-container .left h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    margin: 8px 0 28px 0; 
+    font-weight: 800;
+}
+
+.hero-container .left h1 span.gt {
+    color: var(--red-color);
+}
+
+.hero-container .left a.btn {
+    margin-right: 20px;
+}
+
+.hero-container .left a.cyan {
+    margin-right: 0;
+}
+
+.hero-container .right {
+    padding-right: 30px; 
+}
+
+/* Hero BG and Polygons */
+ 
+.hero-bg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1; /* Z-index of +ve value brings to front, while those of -ve values sends*/
+}
+
+.hero-container .polygon {
+    position: absolute;
+    z-index: -1;
+    top: 100px; 
+    left: 240px;
+}
+
+.hero-container .polygon2 {
+    position: absolute;
+    z-index: -1;
+    top: 180px; 
+    left: 480px;
+}
+
+.hero-container .polygon3 {
+    position: absolute;
+    z-index: -1;
+    top: 300px; 
+    left: 540px;
+}
+
