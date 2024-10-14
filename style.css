@@ -271,3 +271,25 @@ a.btn.cyan:hover {
         opacity: 1;
     }
 }
+
+/* Polygon Animation */
+.hero-container .polygon,
+.hero-container .polygon2,
+.hero-container .polygon3 {
+    opacity: 0;
+    animation-name: fadeIn, rotate;
+    animation-duration: 800ms, 80s;
+    animation-delay: 18 00ms;
+    animation-iteration-count: 1, infinite;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in, linear;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(360deg);    
+    }
+     to {
+        transform: rotate(0deg);
+     }
+}
