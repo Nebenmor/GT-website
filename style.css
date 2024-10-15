@@ -302,3 +302,32 @@ a.btn.cyan:hover {
     padding: 32px 50px;
     margin-top: 100px;
 }
+
+.brands-section .brands-container img {
+    height: 32px;
+}
+
+.brands-section .brands-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brands-section h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    margin-bottom: 48px;
+    color: var(--dark-color);
+    text-align: center;
+    position: relative;
+}
+
+.brands-section h2::after {
+    content: "";
+    position: absolute;
+    width: 43px;
+    height: 3px;
+    background: var(--red-color);
+    top: 40px;
+    transform: translateX(-43px);
+}
