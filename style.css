@@ -347,3 +347,9 @@ section h2::after {
     transform: translateX(-43px);
 }
 
+/* About Us */
+.about-section .section-content {
+    display: flex;
+    align-items: center;
+}
+
