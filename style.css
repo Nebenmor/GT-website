@@ -353,3 +353,21 @@ section h2::after {
     align-items: center;
 }
 
+.about-section .section-content img {
+    margin-left: 100px;
+}
+
+/* Projects Section */
+.projects-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px 18px; /* grid gap for rows and columns respectively */
+    margin-bottom: 42px;
+}
+
+.projects-gallery img {
+    width: 100%;
+    object-fit: cover; /* Ensures the aspect ratio is preserved */
+}
+
+/* Testimonials section */
