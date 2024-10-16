@@ -44,6 +44,19 @@ body {
     padding: 0 100px;
 }
 
+p {
+    line-height: 2;
+    margin: 20px;
+}
+
+section {
+    padding-top: 100px;
+}
+
+section p {
+    color: var(--dark-color)
+}
+
 /* Header Navigation */
 .desktop-nav {
     display: flex;
@@ -313,7 +326,8 @@ a.btn.cyan:hover {
     align-items: center;
 }
 
-.brands-section h2 {
+.brands-section h2,
+section h2 {
     font-family: 'Montserrat', sans-serif;
     font-size: 32px;
     margin-bottom: 48px;
@@ -322,7 +336,8 @@ a.btn.cyan:hover {
     position: relative;
 }
 
-.brands-section h2::after {
+.brands-section h2::after,
+section h2::after {
     content: "";
     position: absolute;
     width: 43px;
@@ -331,3 +346,4 @@ a.btn.cyan:hover {
     top: 40px;
     transform: translateX(-43px);
 }
+
