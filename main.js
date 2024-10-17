@@ -1,3 +1,4 @@
+// Navigation menu functionality
 const options = {
     threshold: 0.8,
 };
