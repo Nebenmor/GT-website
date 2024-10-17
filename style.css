@@ -117,6 +117,7 @@ a.btn {
     text-decoration: none;
     font-weight: bold;
     transition: background-color 400ms;
+    display: inline-block;
 }
 
 a.btn.cyan {
@@ -405,4 +406,29 @@ section h2::after {
 
 .slider-next {
     right: 0;
+}
+
+/* Contact section */
+input[type="text"],
+textarea {
+    padding: 16px 30px;
+    box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.11);
+    border-radius: 24px;
+    background: var(--light-color);
+    border: 1px solid var(--dark-color);
+    font-family: 'Roboto', sans-serif;
+    flex: 1; /* Makes it occupy the maximum amount of width it can have */
+    margin-bottom: 36px;
+}
+
+.contact-section .group {
+    display: flex;
+}
+
+input[type="text"]:nth-child(1) {
+    margin-right: 16px;
+}
+
+input[type="text"]:nth-child(2) {
+    margin-left: 16px;
 }
