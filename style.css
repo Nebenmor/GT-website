@@ -29,6 +29,10 @@
     font-weight: 700;
 }
 
+html {
+    scroll-behavior: smooth; /* Makes the navigation scrolling aceross the page smooth */
+}
+
 * {
     margin: 0;
     box-sizing: border-box;
@@ -36,6 +40,8 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .wrapper {
