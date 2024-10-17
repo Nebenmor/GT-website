@@ -509,3 +509,31 @@ footer a:hover {
 .copyright {
     text-align: center;
 }
+
+
+/* MOBILE RESPONSIVENESS */
+/* Media Queries */
+
+@media (max-width: 650px) {
+    .wrapper {
+        padding: 0;
+        width: auto;
+    }
+
+    .hero-container .right {
+        display: none;
+    }
+
+    .desktop-nav .menu-items {
+        display: none;
+    }
+
+    .desktop-nav {
+        width: calc(100% - 16px);
+        margin-left: 8px;
+    }
+
+    .desktop-nav .logo img {
+        height: 36px;
+    }
+}
