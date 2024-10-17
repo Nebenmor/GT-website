@@ -117,6 +117,9 @@ a.btn {
     text-decoration: none;
     font-weight: bold;
     transition: background-color 400ms;
+}
+
+section a.btn {
     display: inline-block;
 }
 
