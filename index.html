@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GT Website</title>
+    <link rel="stylesheet" href="glider.min.css">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -70,10 +71,10 @@
                 <div class="section-content">
                     <div class="about-description">
                     <p>
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat". 
                     </p>
                     <p>
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                        "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
                     </p>
                 </div>
 
@@ -97,11 +98,89 @@
                     </div>
                     <a href="#" class="btn cyan">View All</a>
                  </section>
-
                  <!-- End of the Projects Section -->
-            
-
     </div>
+
+    <section class="testimonials-section">
+        <div class="wrapper">
+            <h2>Testimonials</h2>
+
+            <div class="testimonials-container">
+                <div class="testimonials">
+                    <!-- Testimonial 1 -->
+                    <div class="testimonial">
+                        <div class="slide-container">
+                            <div class="content">
+                                <p>
+                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat".
+                                </p>
+                                <div class="name">
+                                    <strong>Darlene Richards,</strong> Amazon
+                                </div> 
+                            </div>
+                            <img src="./images/Testimonial1.png" alt="Testimonial 1">
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial">
+                        <div class="slide-container">
+                            <div class="content">
+                                <p>
+                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat".
+                                </p>
+                                <div class="name">
+                                    <strong>Peter Williams,</strong> Louis Vuitton
+                                </div> 
+                            </div>
+                            <img src="./images/Testimonial2.png" alt="Testimonial 2">
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="testimonial">
+                        <div class="slide-container">
+                            <div class="content">
+                                <p>
+                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat".
+                                </p>
+                                <div class="name">
+                                    <strong>Tara Green,</strong> Ferrari
+                                </div> 
+                            </div>
+                            <img src="./images/Testimonial3.png" alt="Testimonial 3">
+                        </div>
+                    </div>
+                </div>
+
+                <span class="slider-prev">
+                    <img src="./images/LeftArrow.svg" alt="Slider LeftArrow">
+                </span>
+
+                <span class="slider-next">
+                    <img src="./images/RightArrow.svg" alt="Slider RightArrow">
+                </span>
+
+                <div role="tablist" "dots-container">
+                    <div class="dots"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of Testimonial Section -->
+
+    <script src="./glider.min.js"></script>
+        
+    <script>
+       new Glider(document.querySelector(".testimonials"), {
+        slidesToShow: 1,
+        dots: ".dots",
+        arrows: {
+            prev: ".slider-prev",
+            next: ".slider-next",
+        }
+       })
+    </script>
 
     <script src="main.js"></script>
 </body>
