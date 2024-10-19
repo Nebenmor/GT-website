@@ -699,4 +699,19 @@ footer a:hover {
     .contact-section input[type="text"] {
         margin-bottom: 30px;
     }
+
+    /* Footer */
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-container .footer-nav {
+        margin-top: 80px;
+    }
+
+    .footer-container logo {
+        order: 2;
+    }
 }
