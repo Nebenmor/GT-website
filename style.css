@@ -662,4 +662,24 @@ footer a:hover {
     img.hide {
         display: none;
     }
+
+    /* Testimonial Section */
+    .testimonial .slide-container {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        padding: 16px 0;
+    }
+
+    .testimonial .slide-container img {
+        width: 150px;
+        margin: 0 auto;
+        order: -1;
+    }
+
+    .testimonials-container .content {
+        margin-top: 30px;
+        padding: 0;
+
+    }
 }
