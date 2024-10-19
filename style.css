@@ -682,4 +682,21 @@ footer a:hover {
         padding: 0;
 
     }
+
+    /* Contact Section */
+    .contact-section .group {
+        flex-direction: column;
+    }
+
+    .contact-section input[type="text"]:first-child {
+        margin-right: 0;
+    }
+
+    .contact-section input[type="text"]:last-child {
+        margin-left: 0;
+    }
+
+    .contact-section input[type="text"] {
+        margin-bottom: 30px;
+    }
 }
