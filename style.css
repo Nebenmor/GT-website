@@ -340,6 +340,18 @@ a.btn.cyan:hover {
     align-items: center;
 }
 
+.brands-container .brands-line-1 {
+    display: flex;
+    justify-content: space-around;
+    flex:2;
+}
+
+.brands-container .brands-line-2 {
+    display: flex;
+    justify-content: space-around;
+    flex:1;
+}
+
 .brands-section h2,
 section h2 {
     font-family: 'Montserrat', sans-serif;
@@ -586,5 +598,40 @@ footer a:hover {
 
     a.btn {
         font-size: 16px;
+    }
+
+    /* Brand Section */
+    .brands-section {
+        border-radius: 0;
+        padding: 32px 0;
+    }
+
+    .brands-section h2,
+    section h2 {
+        font-size: 24px;
+    }
+
+    .brands-section h2::after,
+    section h2::after {
+        top: 100%;
+        width: 40px;
+        transform: translateX(-40px); /* Moves the underline to the right */
+    }
+
+    .brands-section .brands-container {
+        flex-direction: column;
+    }
+
+    .brands-section .brands-container img {
+        height: 24px;
+    }
+
+    .brands-section .brands-line-1 {
+        padding-bottom: 25px;
+        width: 100%;
+    }
+
+    .brands-section .brands-line-2 {
+        width: 60%;
     }
 }
