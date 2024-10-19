@@ -527,6 +527,7 @@ footer a:hover {
         width: auto; /* Prevent horizontal scrolling by removing fixed width */
     }
 
+    /* Navigation */
     .hero-container .right {
         display: none;
     }
@@ -552,37 +553,5 @@ footer a:hover {
     .desktop-nav .menu-icon {
         display: block;
         cursor: pointer;
-    }
-
-    .hero-container .polygon3 {
-        display: none;
-    }
-
-    .hero-container .polygon {
-        left: 32px;
-        top: 150px;
-    }
-
-    .hero-container .polygon2 {
-        left: 300px;
-        top: 280px;
-    }
-
-    .hero-container .left {
-        padding-left: 50px;
-    }
-
-    .hero-container .left p {
-        font-size: 18px;
-        margin-bottom: 0;
-        margin-left: 0;
-    }
-
-    .hero-container .left h1 {
-        font-size: 30px;
-    }
-
-    a.btn {
-        font-size: 16px;
     }
 }
