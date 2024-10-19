@@ -714,4 +714,5 @@ footer a:hover {
     .footer-container logo {
         order: 2;
     }
+    /* Update: previous commits on responsive web design was implemented for mobile only */
 }
