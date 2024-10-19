@@ -634,4 +634,18 @@ footer a:hover {
     .brands-section .brands-line-2 {
         width: 60%;
     }
+
+    /* About Us */
+    section {
+        padding: 100px 30px 0 30px;
+    }
+
+    .about-section .section-content {
+        flex-direction: column;
+    }
+
+    .about-section .section-content img {
+        margin-left: 0;
+        margin-top: 30px;
+    }
 }
