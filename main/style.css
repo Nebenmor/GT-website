@@ -30,7 +30,7 @@
 }
 
 html {
-    scroll-behavior: smooth; /* Makes the navigation scrolling aceross the page smooth */
+    scroll-behavior: smooth; /* Makes the navigation scrolling accross the page smooth */
 }
 
 * {
@@ -42,6 +42,7 @@ body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    width: 100%;
 }
 
 .wrapper {
@@ -119,7 +120,8 @@ section p {
     color: var(--light-color);
 }
 
-a.btn {
+a.btn,
+button.btn {
     background: var(--red-color);
     color: var(--light-color);
     border-radius: 24px;
@@ -127,13 +129,17 @@ a.btn {
     text-decoration: none;
     font-weight: bold;
     transition: background-color 400ms;
+    border: 0;
+    cursor: pointer;
+    font-size: 16px;
 }
 
 section a.btn {
     display: inline-block;
 }
 
-a.btn.cyan {
+a.btn.cyan,
+button.btn.cyan {
     background: var(--cyan-color);
     color: var(--dark-color);
 }
@@ -527,7 +533,8 @@ footer a:hover {
     text-align: center;
 }
 
-.desktop-nav .menu-icon {
+.desktop-nav .menu-icon,
+.mobile-nav {
     display: none;
 }
 
@@ -715,4 +722,42 @@ footer a:hover {
         order: 2;
     }
     /* Update: previous commits on responsive web design was implemented for mobile only */
+
+    /* Mobile Navigation Menu */
+    .mobile-nav {
+        display: flex;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        position: fixed;
+        left: 0;
+        background: var(--dark-color);
+        right: 0;
+        z-index: 200;
+
+        opacity: 0;
+        pointer-events: none;
+        top: -100;
+        transition: 400ms;
+    }
+
+    .mobile-nav.active {
+        opacity: 1;
+        pointer-events: auto;
+        top: 0;
+    }
+
+    .mobile-nav .menu-items {
+        list-style-type: none;
+    }
+
+    .mobile-nav .menu-items li {
+        margin: 20px 0;
+    }
+
+    .mobile-nav .menu-items li a {
+        color: var(--light-color);
+        text-decoration: none;
+    }
 }
